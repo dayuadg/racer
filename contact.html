@@ -19,6 +19,58 @@ body {
     line-height: 1.6;
     padding-top: 50px;
 }
+        /* Contact Form Styling */
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+}
+
+form input,
+form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #ff4500;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 69, 0, 0.5);
+}
+
+form textarea {
+    resize: none;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #ff4500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #e63e00;
+}
+
 
 header {
     background-color: #111;
