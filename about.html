@@ -5,58 +5,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tentang Kami - Mobil Cepat</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: #F4E0AF;
-            font-family: Arial, sans-serif;
-            color: #333;
-        }
-        header {
-            width: 100%;
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-            position: fixed;
-            top: 0;
-        }
-        header nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 1.2em;
-        }
-        header nav a:hover {
-            text-decoration: underline;
-        }
-        .splash-image {
-            margin-top: 60px;
-            max-width: 100%;
-            max-height: calc(100vh - 60px);
-        }
-        .description {
-            max-width: 800px;
-            text-align: center;
-            margin: 20px;
-            padding: 20px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-        .description h1 {
-            font-family: "Orbitron", sans-serif;
-            color: #222;
-        }
-        .description p {
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
+       /* General Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 50px;
+}
+
+header {
+    background-color: #111;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff4500;
+    border-radius: 5px;
+}
+
+/* Main Section Styling */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ff4500;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+section {
+    padding: 20px;
+    line-height: 1.8;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #222;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+section p {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+section ul {
+    margin: 20px 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #111;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #ff4500;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    body {
+        padding-top: 30px;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p {
+        font-size: 0.95rem;
+    }
+}
+
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -99,7 +197,7 @@
             </ul>
 
             <h2>Kenapa Memilih Mobil Cepat?</h2>
-            <p>**Mobil Cepat** adalah tempat yang tepat bagi siapa saja yang mencintai dunia balap mobil. Kami menyediakan pengalaman balapan terbaik, dengan pilihan game yang terus berkembang dan berbagai fitur baru yang selalu ditambahkan. Dengan komunitas penggemar balap yang besar, kami memastikan bahwa Anda tidak hanya bermain, tetapi juga terhubung dengan pemain lain yang memiliki minat yang sama.</p>
+            <p><b>Mobil Cepat</b> adalah tempat yang tepat bagi siapa saja yang mencintai dunia balap mobil. Kami menyediakan pengalaman balapan terbaik, dengan pilihan game yang terus berkembang dan berbagai fitur baru yang selalu ditambahkan. Dengan komunitas penggemar balap yang besar, kami memastikan bahwa Anda tidak hanya bermain, tetapi juga terhubung dengan pemain lain yang memiliki minat yang sama.</p>
 
             <h2>Komitmen Kami</h2>
             <p>Kami berkomitmen untuk terus memberikan yang terbaik bagi pemain kami. Dengan teknologi yang terus berkembang, kami berusaha menghadirkan pengalaman bermain yang semakin baik, dengan perbaikan rutin pada game, sistem, dan fitur kami. Kami juga menjamin bahwa setiap game yang kami tampilkan telah diuji untuk memastikan kenyamanan dan kualitas yang optimal bagi semua pemain.</p>
