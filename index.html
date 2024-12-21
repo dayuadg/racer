@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Saya</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        header {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+        }
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        .splash-image {
+            margin-top: 60px;
+            max-width: 100%;
+            max-height: calc(100vh - 60px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="disclaimer.html">Disclaimer</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <center><a href="game.html"><img src="splash.png" alt="Splash Image" class="splash-image"></a></center>
+</body>
+</html>
